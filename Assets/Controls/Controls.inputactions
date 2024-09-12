@@ -1,0 +1,40 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Touch",
+            "id": "c8295e9a-bec7-4bf6-8881-0f7fb046959f",
+            "actions": [
+                {
+                    "name": "TouchDelta",
+                    "type": "PassThrough",
+                    "id": "b74b8eaf-f9cc-45ed-b854-8de041b7a536",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "2fa72d92-66fa-45f0-8fae-a70841c5abd5",
+                    "path": "<Touchscreen>/primaryTouch/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mobile",
+                    "action": "TouchDelta",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "Mobile",
+            "bindingGroup": "Mobile",
+            "devices": []
+        }
+    ]
+}
