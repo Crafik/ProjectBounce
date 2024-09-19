@@ -10,8 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2522612508358975091}
   - component: {fileID: 2179506648503381966}
+  - component: {fileID: 9050756786991973792}
   - component: {fileID: 591633010922296336}
   - component: {fileID: 1495949071726586788}
+  - component: {fileID: -5763791220244252993}
   m_Layer: 0
   m_Name: BouncerPrefab
   m_TagString: Untagged
@@ -50,11 +52,34 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.065
+  m_Radius: 0.06
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &9050756786991973792
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097635351481557158}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.035
+  m_Height: 0.12
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &591633010922296336
 Rigidbody:
@@ -97,6 +122,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rigidBody: {fileID: 591633010922296336}
   moveSpeed: 1
+  isMoving: 0
+--- !u!114 &-5763791220244252993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097635351481557158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 84db4b966a17740468a3454cfbf4d740, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidBody: {fileID: 591633010922296336}
 --- !u!1001 &5790555550387306293
 PrefabInstance:
   m_ObjectHideFlags: 0
