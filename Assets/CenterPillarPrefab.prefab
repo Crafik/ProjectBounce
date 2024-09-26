@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6958248007118770148}
   - component: {fileID: -8048407495737690863}
   - component: {fileID: 6593125019786848311}
+  - component: {fileID: 445082717291104675}
   m_Layer: 0
   m_Name: CenterPillarPrefab
   m_TagString: Untagged
@@ -59,6 +60,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d91add051db9b1c46bde16838aa9e749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &445082717291104675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36454003369790735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 554729b1f71fa5d46981498ea39ea766, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _material: {fileID: 2100000, guid: 2f09f296e51bc2c4b8a3b669565b9343, type: 2}
 --- !u!1001 &7365111137264794678
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -22,6 +22,8 @@ public class PillarRotation : MonoBehaviour
 
         BouncerScreenScroll.StartTransition += TransitionStart;
         BouncerScreenScroll.EndTransition += TransitionEnd;
+
+        BouncerDestruction.PlayerDeath += PlayerDeath;
     }
 
     void OnDisable(){
@@ -29,6 +31,8 @@ public class PillarRotation : MonoBehaviour
 
         BouncerScreenScroll.StartTransition -= TransitionStart;
         BouncerScreenScroll.EndTransition -= TransitionEnd;
+
+        BouncerDestruction.PlayerDeath -= PlayerDeath;
 
         _controls.Disable();
     }
@@ -50,5 +54,9 @@ public class PillarRotation : MonoBehaviour
 
     private void TransitionEnd(){
         isActive = true;
+    }
+
+    private void PlayerDeath(){
+        isActive = false;
     }
 }
