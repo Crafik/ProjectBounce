@@ -326,6 +326,12 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &735846029 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6360884703482256302, guid: 310c7b4a2e64f514fb5065dfc3410a23,
+    type: 3}
+  m_PrefabInstance: {fileID: 1060500828}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +1003,7 @@ PrefabInstance:
     - target: {fileID: 2522612508358975091, guid: c2dfdb6f950b4164f8ef04441d10151a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.7
+      value: -0.64
       objectReference: {fileID: 0}
     - target: {fileID: 2522612508358975091, guid: c2dfdb6f950b4164f8ef04441d10151a,
         type: 3}
@@ -1176,6 +1182,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1421955001238359446, guid: 5a37b835554bdd74fbdc3e06fb9fbfe2,
+        type: 3}
+      propertyPath: activatableObject
+      value: 
+      objectReference: {fileID: 735846029}
     - target: {fileID: 5908348890890677692, guid: 5a37b835554bdd74fbdc3e06fb9fbfe2,
         type: 3}
       propertyPath: m_Name
