@@ -9,7 +9,7 @@ public class ButtonPress : MonoBehaviour
 
     [Space (10)]
     [Header ("===== References =====")]
-    [SerializeField] public GameObject activatableObject;
+    [SerializeField] public List<GameObject> activatableObjects;
 
     private bool isPressed;
 
@@ -23,7 +23,9 @@ public class ButtonPress : MonoBehaviour
                 isPressed = true;
                 _collider.enabled = false;
                 movingPart.transform.localPosition -= Vector3.up * 0.068f;
-                activatableObject?.GetComponent<IActivatable>().Activate();
+                foreach (GameObject obj in activatableObjects){
+                    obj?.GetComponent<IActivatable>().Activate();
+                }
             }
         }
     }
