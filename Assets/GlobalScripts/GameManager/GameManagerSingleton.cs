@@ -6,6 +6,8 @@ public class GameManagerSingleton : MonoBehaviour
 {
     public static GameManagerSingleton instance { get; private set; }
 
+    [SerializeField] private LevelList _levelList;
+
     void Awake(){
         if (instance != null && instance != this){
             Destroy(instance);
@@ -14,4 +16,6 @@ public class GameManagerSingleton : MonoBehaviour
             instance = this;
         }
     }
+
+    // here be code
 }
