@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1495949071726586788}
   - component: {fileID: -5763791220244252993}
   - component: {fileID: 2680817787656560684}
+  - component: {fileID: 6174701536127748704}
   m_Layer: 0
   m_Name: BouncerPrefab
   m_TagString: Player
@@ -151,6 +152,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionPrefab: {fileID: 4224620731355458206, guid: 654c87d389455934abef1119f9d94728,
     type: 3}
+--- !u!114 &6174701536127748704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7097635351481557158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5216417a513a67479e5781c0909bb5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _rigidBody: {fileID: 0}
 --- !u!1001 &5790555550387306293
 PrefabInstance:
   m_ObjectHideFlags: 0
