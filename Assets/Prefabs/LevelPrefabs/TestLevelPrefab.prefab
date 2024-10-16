@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1123217405198250325}
   m_Layer: 0
-  m_Name: Level2Prefab
+  m_Name: TestLevelPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,7 +305,7 @@ PrefabInstance:
     - target: {fileID: 611607889569004654, guid: 47adfc3bce8417c42a2d43744f3e8aa5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 611607889569004654, guid: 47adfc3bce8417c42a2d43744f3e8aa5,
         type: 3}
