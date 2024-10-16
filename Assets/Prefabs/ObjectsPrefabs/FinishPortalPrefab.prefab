@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5314249763648812651}
   - component: {fileID: 4770879068667708891}
   - component: {fileID: 1427874839757223526}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4841,7 +4841,7 @@ GameObject:
   - component: {fileID: 1600031347388838382}
   - component: {fileID: 7965729698050404198}
   - component: {fileID: 8084902482038279825}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9671,7 +9671,7 @@ GameObject:
   - component: {fileID: 6196253158214731251}
   - component: {fileID: 9207039026199574077}
   - component: {fileID: 2600714663056504536}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14500,7 +14500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2781800937847196844}
   - component: {fileID: 7764497313553188028}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PortalWhirl
   m_TagString: Finish
   m_Icon: {fileID: 0}
@@ -14556,7 +14556,7 @@ GameObject:
   - component: {fileID: 1141308063655523907}
   - component: {fileID: 5492379939875373922}
   - component: {fileID: 3297003935588712329}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19386,7 +19386,7 @@ GameObject:
   - component: {fileID: 3270408976645353261}
   - component: {fileID: 7741775817629199655}
   - component: {fileID: 2286506723310539165}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24216,7 +24216,7 @@ GameObject:
   - component: {fileID: 1275130815379625427}
   - component: {fileID: 3628124757023416353}
   - component: {fileID: 8068575387261264753}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29046,7 +29046,7 @@ GameObject:
   - component: {fileID: 5783233009626724715}
   - component: {fileID: 3577432510404208416}
   - component: {fileID: 5138273271832739762}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33874,7 +33874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7790921867638685734}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33912,7 +33912,7 @@ GameObject:
   - component: {fileID: 577815733605170089}
   - component: {fileID: 4789997786157449596}
   - component: {fileID: 610813790336933618}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38742,7 +38742,7 @@ GameObject:
   - component: {fileID: 1336494015458850889}
   - component: {fileID: 81590699753336768}
   - component: {fileID: 5822011272420361287}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43570,7 +43570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 497467723156991780}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightWing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -43608,7 +43608,7 @@ GameObject:
   - component: {fileID: 5757263155249933844}
   - component: {fileID: 5330387303798553952}
   - component: {fileID: 4498490934747528508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48436,7 +48436,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 611607889569004654}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FinishPortalPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}

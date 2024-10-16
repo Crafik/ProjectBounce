@@ -12,12 +12,16 @@ public class BouncerMovement : MonoBehaviour
 
     void OnEnable(){
         BouncerScreenScroll.StartTransition += TransitionStart;
-        BouncerScreenScroll.EndTransition += TransitionEnd;
+        BouncerScreenScroll.EndTransition += SetActive;
+        
+        BouncerFinish.LevelFinished -= SetInactive;
     }
 
     void OnDisable(){
         BouncerScreenScroll.StartTransition -= TransitionStart;
-        BouncerScreenScroll.EndTransition -= TransitionEnd;
+        BouncerScreenScroll.EndTransition -= SetActive;
+
+        BouncerFinish.LevelFinished -= SetInactive;
     }
 
     void Start(){
@@ -40,10 +44,14 @@ public class BouncerMovement : MonoBehaviour
     }
 
     private void TransitionStart(bool omitted){
-        isMoving = false;
+        SetInactive();
     }
 
-    private void TransitionEnd(){
-        isMoving = true;;
+    private void SetActive(){
+        isMoving = true;
+    }
+
+    private void SetInactive(){
+        isMoving = false;
     }
 }

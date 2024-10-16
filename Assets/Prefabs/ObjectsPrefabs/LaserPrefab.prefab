@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7206960694548913752}
   - component: {fileID: 8041798957784978433}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LaserBaseBottom
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -66,7 +66,7 @@ GameObject:
   - component: {fileID: 640833559501811493}
   - component: {fileID: 1548842084367379514}
   - component: {fileID: 5059990577004385659}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Laser
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -171,7 +171,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2563591985577603806}
   - component: {fileID: 1148997690210015270}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LaserBaseTop
   m_TagString: Floor
   m_Icon: {fileID: 0}
@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4366911679442311639}
   - component: {fileID: 6508895332119294145}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LaserPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -343,8 +343,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8598147427356468189, guid: 59e806e2ab1f9de47b0d944efe1629e3,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8598147427356468189, guid: 59e806e2ab1f9de47b0d944efe1629e3,
+        type: 3}
       propertyPath: m_TagString
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: -8553417584757162366, guid: 59e806e2ab1f9de47b0d944efe1629e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8553417584757162366, guid: 59e806e2ab1f9de47b0d944efe1629e3,
         type: 3}
@@ -355,6 +365,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 59e806e2ab1f9de47b0d944efe1629e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 59e806e2ab1f9de47b0d944efe1629e3,
         type: 3}
@@ -462,8 +477,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8598147427356468189, guid: 59e806e2ab1f9de47b0d944efe1629e3,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8598147427356468189, guid: 59e806e2ab1f9de47b0d944efe1629e3,
+        type: 3}
       propertyPath: m_TagString
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: -8553417584757162366, guid: 59e806e2ab1f9de47b0d944efe1629e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: -8553417584757162366, guid: 59e806e2ab1f9de47b0d944efe1629e3,
         type: 3}
@@ -474,6 +499,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LaserBase
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 59e806e2ab1f9de47b0d944efe1629e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 59e806e2ab1f9de47b0d944efe1629e3,
         type: 3}

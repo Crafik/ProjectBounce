@@ -21,18 +21,22 @@ public class PillarRotation : MonoBehaviour
         _controls.Touch.TouchDelta.performed += TouchPerformed;
 
         BouncerScreenScroll.StartTransition += TransitionStart;
-        BouncerScreenScroll.EndTransition += TransitionEnd;
+        BouncerScreenScroll.EndTransition += SetActive;
 
-        BouncerDestruction.PlayerDeath += PlayerDeath;
+        BouncerDestruction.PlayerDeath += SetInactive;
+
+        BouncerFinish.LevelFinished += SetInactive;
     }
 
     void OnDisable(){
         _controls.Touch.TouchDelta.performed -= TouchPerformed;
 
         BouncerScreenScroll.StartTransition -= TransitionStart;
-        BouncerScreenScroll.EndTransition -= TransitionEnd;
+        BouncerScreenScroll.EndTransition -= SetActive;
 
-        BouncerDestruction.PlayerDeath -= PlayerDeath;
+        BouncerDestruction.PlayerDeath -= SetInactive;
+
+        BouncerFinish.LevelFinished -= SetInactive;
 
         _controls.Disable();
     }
@@ -49,14 +53,14 @@ public class PillarRotation : MonoBehaviour
     }
 
     private void TransitionStart(bool omitted){
-        isActive = false;
+        SetInactive();
     }
 
-    private void TransitionEnd(){
+    private void SetActive(){
         isActive = true;
     }
 
-    private void PlayerDeath(){
+    private void SetInactive(){
         isActive = false;
     }
 }

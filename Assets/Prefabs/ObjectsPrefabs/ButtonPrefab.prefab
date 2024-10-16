@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1221858197800651275}
   - component: {fileID: 2907573600191540067}
   - component: {fileID: 1421955001238359446}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ButtonPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _collider: {fileID: 2907573600191540067}
   movingPart: {fileID: 426099040272822042}
-  activatableObject: {fileID: 0}
+  activatableObjects: []
 --- !u!1001 &911388312892117400
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,8 +150,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8598147427356468189, guid: 23e5c64f56ed7e946a68c1e6eed014b2,
         type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8598147427356468189, guid: 23e5c64f56ed7e946a68c1e6eed014b2,
+        type: 3}
       propertyPath: m_TagString
       value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: -8553417584757162366, guid: 23e5c64f56ed7e946a68c1e6eed014b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8553417584757162366, guid: 23e5c64f56ed7e946a68c1e6eed014b2,
         type: 3}
@@ -162,6 +172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Button
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 23e5c64f56ed7e946a68c1e6eed014b2,
+        type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 23e5c64f56ed7e946a68c1e6eed014b2,
         type: 3}

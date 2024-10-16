@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3384239436143713619}
   - component: {fileID: 814209844712857450}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: SpiralPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,6 +124,11 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6010214945015627077, guid: 8089811d203a7a64b86279cc1f579790,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: -3175704190233633510, guid: 8089811d203a7a64b86279cc1f579790,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -133,6 +138,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HeatSpiral
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 8089811d203a7a64b86279cc1f579790,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1364974133809703462, guid: 8089811d203a7a64b86279cc1f579790,
         type: 3}
@@ -149,6 +159,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2f09f296e51bc2c4b8a3b669565b9343, type: 2}
+    - target: {fileID: 7512687335075297100, guid: 8089811d203a7a64b86279cc1f579790,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7627267800937790653, guid: 8089811d203a7a64b86279cc1f579790,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7627267800937790653, guid: 8089811d203a7a64b86279cc1f579790,
         type: 3}
       propertyPath: m_TagString
