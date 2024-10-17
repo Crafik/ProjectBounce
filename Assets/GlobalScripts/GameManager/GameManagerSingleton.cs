@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManagerSingleton : MonoBehaviour
 {
@@ -67,7 +68,7 @@ public class GameManagerSingleton : MonoBehaviour
 
         if (_levelNum == _levelList.Levels.Count){
             _UI.transform.GetChild(0).gameObject.SetActive(false);
-            _levelCompleteText.text = "Congratulations";
+            _levelCompleteText.text = "Congratulations\nYou won!";
         }
     }
 
@@ -75,5 +76,9 @@ public class GameManagerSingleton : MonoBehaviour
         _UI.SetActive(true);
         _levelCompleteText.text = "You lost";
         _playButtonText.text = "Restart";
+    }
+
+    public void ExitGame(){
+        SceneManager.LoadSceneAsync(0);
     }
 }
