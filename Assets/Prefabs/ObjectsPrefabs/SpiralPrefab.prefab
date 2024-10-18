@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3384239436143713619}
   - component: {fileID: 814209844712857450}
+  - component: {fileID: 1328413691791524074}
   m_Layer: 6
   m_Name: SpiralPrefab
   m_TagString: Untagged
@@ -46,6 +47,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hazard: {fileID: 8912197131030855673}
+--- !u!114 &1328413691791524074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3038141819767534941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3f1ed19b08a204a80ba300a0be83c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hazardSwitch: {fileID: 814209844712857450}
+  isTimedSwitch: 0
+  timer: 0
 --- !u!1001 &1330536291018900292
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -16,12 +16,6 @@ public class LaserBeamPulsation : MonoBehaviour
         isRising = true;
     }
 
-    void OnDisable(){
-        Color buf = _material.color;
-        buf.a = 0.4f;
-        _material.color = buf;
-    }
-
     void Update(){
         if (isRising){
             if (_material.color.a < maxOpacity){

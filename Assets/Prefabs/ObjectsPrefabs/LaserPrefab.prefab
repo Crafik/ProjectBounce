@@ -225,6 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4366911679442311639}
   - component: {fileID: 6508895332119294145}
+  - component: {fileID: 487626890381045605}
   m_Layer: 6
   m_Name: LaserPrefab
   m_TagString: Untagged
@@ -263,6 +264,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hazard: {fileID: 3713064528445408000}
+--- !u!114 &487626890381045605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360884703482256302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef3f1ed19b08a204a80ba300a0be83c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hazardSwitch: {fileID: 6508895332119294145}
+  isTimedSwitch: 0
+  timer: 0
 --- !u!1001 &1353751247390931321
 PrefabInstance:
   m_ObjectHideFlags: 0
