@@ -43,6 +43,10 @@ public class PillarRotation : MonoBehaviour
 
     void Start(){
         isActive = true;
+
+        #if UNITY_ANDROID
+        rotationSpeed *= 2f;
+        #endif
     }
 
     private void TouchPerformed(InputAction.CallbackContext ctx){
