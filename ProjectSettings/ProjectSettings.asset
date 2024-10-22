@@ -140,7 +140,10 @@ PlayerSettings:
   visionOSBundleVersion: 1.0
   tvOSBundleVersion: 1.0
   bundleVersion: 1.0.2
-  preloadedAssets: []
+  preloadedAssets:
+  - {fileID: -353443775509865607, guid: b74f91a1452cf2048a7c5f1df4f2c4df, type: 2}
+  - {fileID: 11400000, guid: 8ad757539c06db64397111183a6886cc, type: 2}
+  - {fileID: 11400000, guid: ce44e33f3336dac47ae0e046d18e9ce4, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -160,7 +163,8 @@ PlayerSettings:
   resetResolutionOnWindowResize: 0
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.ProjectBounce
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -841,7 +845,7 @@ PlayerSettings:
   hmiLogStartupTiming: 0
   hmiCpuConfiguration: 
   apiCompatibilityLevel: 6
-  activeInputHandler: 2
+  activeInputHandler: 1
   windowsGamepadBackendHint: 0
   cloudProjectId: 594c8218-9eb6-434f-a0cf-5ca1a3fc05c8
   framebufferDepthMemorylessMode: 0
