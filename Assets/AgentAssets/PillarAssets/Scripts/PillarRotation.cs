@@ -9,16 +9,22 @@ public class PillarRotation : MonoBehaviour
 
     public float rotationSpeed;
 
+    private bool isMousePressed;
+
     private bool isActive;
 
     void Awake(){
         _controls = new Controls();
+        isMousePressed = false;
     }
 
     void OnEnable(){
         _controls.Enable();
 
         _controls.Touch.TouchDelta.performed += TouchPerformed;
+        _controls.Mouse.MouseDrag.performed += MouseDragPerformed;
+        _controls.Mouse.MouseClick.performed += MouseClickPerformed;
+        _controls.Mouse.MouseClick.canceled += MouseClickPerformed;
 
         BouncerScreenScroll.StartTransition += TransitionStart;
         BouncerScreenScroll.EndTransition += SetActive;
@@ -30,6 +36,9 @@ public class PillarRotation : MonoBehaviour
 
     void OnDisable(){
         _controls.Touch.TouchDelta.performed -= TouchPerformed;
+        _controls.Mouse.MouseDrag.performed -= MouseDragPerformed;
+        _controls.Mouse.MouseClick.performed -= MouseClickPerformed;
+        _controls.Mouse.MouseClick.canceled -= MouseClickPerformed;
 
         BouncerScreenScroll.StartTransition -= TransitionStart;
         BouncerScreenScroll.EndTransition -= SetActive;
@@ -43,10 +52,13 @@ public class PillarRotation : MonoBehaviour
 
     void Start(){
         isActive = true;
+    }
 
-        #if UNITY_ANDROID
-        rotationSpeed *= 2f;
-        #endif
+    private void MouseDragPerformed(InputAction.CallbackContext ctx){
+        if (isActive && isMousePressed){
+            float rot = _controls.Mouse.MouseDrag.ReadValue<Vector2>().x;
+            transform.Rotate(Vector3.up, -rot * rotationSpeed);
+        }
     }
 
     private void TouchPerformed(InputAction.CallbackContext ctx){
@@ -54,6 +66,10 @@ public class PillarRotation : MonoBehaviour
             float rot = ctx.ReadValue<Vector2>().x;
             transform.Rotate(Vector3.up, -rot * rotationSpeed);
         }
+    }
+
+    private void MouseClickPerformed(InputAction.CallbackContext ctx){
+        isMousePressed = ctx.performed;
     }
 
     private void TransitionStart(bool omitted){
